@@ -98,6 +98,6 @@ body{
 }
 
 .foto img{
-    width: clamp(80px, 27vw, 650px);
+    width: clamp(120px, 37vw, 650px);
     border-radius: 15px;
 }
