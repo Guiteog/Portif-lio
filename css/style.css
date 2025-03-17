@@ -62,7 +62,7 @@ body{
 
 #sobre{
     display: grid;
-    background: radial-gradient(circle, #858585 ,#1F1F1F 72%);
+    background: radial-gradient(circle, #858585 ,#1F1F1F 40%);
     grid-template-areas: 'texto, imagem';
     grid-template-columns: 1fr 1fr;
     color: #FFFFFF;
@@ -73,11 +73,31 @@ body{
 
 .text{
     grid-area: 'texto' ;
-    margin-left: 9vw;
-    margin-right: 2vw;
+    padding-left: clamp(25px, 11vw, 100px);
+    padding-right: clamp(25px, 11vw, 100px);
+    padding-top: clamp();
+    
 }
 
 .text p{
+    font-weight: 470;
+    letter-spacing: 0.9px;
+    line-height: 1.8;
+    font-size: clamp(12px, 1rem, 28px);
+}
+
+.text h1{
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: clamp(12px, 2.5vw, 38px);
+}
+
+.foto{
+    grid-area: 'imagem';
+    padding-left: clamp(100px, 15vw, 250px);
+    padding-bottom: clamp(100px, 15vw, 250px);
+}
+
+.foto img{
+    width: clamp(80px, 27vw, 650px);
+    border-radius: 15px;
 }
