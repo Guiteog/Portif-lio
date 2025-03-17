@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    display: grid;
+    background: linear-gradient(180deg, #33BB41, #0A120B) !important;
+    min-height: 100vh;
+}
+
+.menu{
+    
+    position: relative; /* Define referência para a logo */
+    display: flex;
+    justify-content: space-between; /* Mantém os outros itens organizados */
+    align-items: center;
+    padding: 0 5vw;
+    background-color: #212121;
+    height: clamp(50px, 9vh, 100px);
+    
+}
+
+.menu .logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Move a logo exatamente para o centro */
+    width: clamp(40px, 8vw, 80px);
+    
+}
+.menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw;
+}
+
+.menu li{
+    padding: 1.5vw;
+    font-family: "karla", sans-serif;
+    list-style: none;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    font-weight: lighter;
+    font-size: clamp(11px, 0.8vw, 35px);
+}
+
+
+
+.home{
+    display: grid;
+    justify-items: center;
+    align-self: end;
+}
