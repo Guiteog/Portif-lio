@@ -1,32 +1,33 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "karla", sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 
 body{
     display: grid;
-    background: linear-gradient(180deg, #33BB41, #0A120B) !important;
-    min-height: 100vh;
+
 }
 
 .menu{
     
-    position: relative; /* Define referência para a logo */
+    position: relative; 
     display: flex;
-    justify-content: space-between; /* Mantém os outros itens organizados */
+    justify-content: space-between; 
     align-items: center;
     padding: 0 5vw;
     background-color: #212121;
-    height: clamp(50px, 9vh, 100px);
+    height: clamp(60px, 8vh, 110px);
+    margin-bottom: 0;
     
 }
 
 .menu .logo{
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Move a logo exatamente para o centro */
-    width: clamp(40px, 8vw, 80px);
+    transform: translateX(-50%); 
+    width: clamp(55px, 4.5vw, 120px);
     
 }
 .menu ul{
@@ -37,7 +38,7 @@ body{
 
 .menu li{
     padding: 1.5vw;
-    font-family: "karla", sans-serif;
+    
     list-style: none;
     color: #FFFFFF;
     flex-wrap: wrap;
@@ -45,10 +46,38 @@ body{
     font-size: clamp(11px, 0.8vw, 35px);
 }
 
+/* Section */
 
-
-.home{
+#home{
+    margin-top: 0px;
     display: grid;
     justify-items: center;
     align-self: end;
+    background: linear-gradient(180deg, #33BB41, #0A120B) !important;
+    padding-top: 13vh;
+    
+}
+
+/* Section Sobre */
+
+#sobre{
+    display: grid;
+    background: radial-gradient(circle, #858585 ,#1F1F1F 72%);
+    grid-template-areas: 'texto, imagem';
+    grid-template-columns: 1fr 1fr;
+    color: #FFFFFF;
+    padding-top: 15vh;
+
+}
+
+
+.text{
+    grid-area: 'texto' ;
+    margin-left: 9vw;
+    margin-right: 2vw;
+}
+
+.text p{
+    font-weight: bold;
+    font-size: 0.9rem;
 }
